@@ -52,7 +52,7 @@ def parse_date(user_string):
     new_month = parse_month(month)
     new_date = parse_number_date(date)
     new_year = year
-    print(new_month + '/' + new_date + '/' + new_year)
+    return (new_month + '/' + new_date + '/' + new_year)
 
 #REMOVE PASS AND YOUR CODE GOES HERE
 if __name__ == '__main__':
@@ -62,6 +62,6 @@ if __name__ == '__main__':
         if original_date == '-1':
             i += 1
         else:
-            parse_date(original_date)
+            print(parse_date(original_date))
     print('-1')
     #try new committing
